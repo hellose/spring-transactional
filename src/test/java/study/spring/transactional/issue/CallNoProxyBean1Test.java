@@ -36,7 +36,6 @@ public class CallNoProxyBean1Test {
 
 		public void external() {
 			log.info("call external");
-			log.info("{}", this.getClass());
 			Util.isTransactionActive();
 			/*
 			 * transaction이 필요하지 않은 부분...
@@ -49,7 +48,6 @@ public class CallNoProxyBean1Test {
 		@Transactional
 		public void internal() {
 			log.info("call internal");
-			log.info("{}", this.getClass());
 			Util.isTransactionActive();
 		}
 
