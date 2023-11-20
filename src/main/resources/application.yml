@@ -7,7 +7,7 @@ logging:
           interceptor: TRACE
         jdbc:
           datasource:
-            DatasourceTransactionManager: DEBUG
+            DataSourceTransactionManager: DEBUG
         orm:
           jpa:
             JpaTransactionManager: DEBUG
